@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN AND CREATE PAGE</title>
+	<link rel="StyleSheet" href="Style.css">
+	
+	
+	
+	
+</head>
+<body>
+	
+	<DIV class="hero" >
+		
+		<Div class="form-box">
+			<Div class="button-box">
+				<Div id="btn"></Div>
+
+				<button type="button" class="toggel-btn" onclick="myFunction()">Log In</button>
+			
+				<button type="button" class="toggel-btn" onclick="myFunctionx()">Register</button>
+				
+			</Div>
+
+			<form id="login" class="input-groups">
+				<input type="txt" class="input-feild" id="user"  placeholder="User Id" required>
+				<input type="Password" class="input-feild" id="pass" value="" placeholder="Password" required>
+				<input type="checkbox" class="check-box"><span>Remember password</span>
+				<button type="submit" class="submit-btn" onclick="openLink()"  >Log in</button>
+				<p id="rt">cc</p>
+			</form>
+			<form id="register"  class="input-groups" action="connect.php"  method="POST">
+				<input type="txt" class="input-feild" id="fname" name="User"  placeholder="User" required>
+				<input type="email" class="input-feild"   placeholder="Email id" required>
+				<input type="Password" class="input-feild"  name="password" id="fpass" placeholder="Password" required>
+				<input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span>
+				<button type="submit" class="submit-btn" onclick="">Register</button>
+			</form>
+		</Div>
+	</DIV>
+		<script>
+			
+
+
+			function myFunctionx() {
+	        	document.getElementById("login").style.left = "-400px"; 
+	  			document.getElementById("register").style.left = "50px";
+	 			document.getElementById("btn").style.left = "110px"; 
+
+			}
+
+			function myFunction() {
+	  			document.getElementById("login").style.left = "50px"; 
+	  			document.getElementById("register").style.left = "450px";
+	  			document.getElementById("btn").style.left = "0"; 
+
+			}
+			function openLink() {
+  				window.open("file:///C:/New%20folder/editor.html");
+			}
+
+
+
+		</script>
+
+			
+</body>			
+</html>
